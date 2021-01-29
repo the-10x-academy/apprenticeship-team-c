@@ -3,6 +3,8 @@ import "./header.css";
 import clone from "./images/icon.png";
 import camera from "./images/camera.png"
 
+
+// Using class
 class Navbar extends Component{
     render(){
         return(
