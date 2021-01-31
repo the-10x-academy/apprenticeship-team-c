@@ -1,42 +1,38 @@
-.NavbarItems {
-	/* position: absolute; */
-	margin-top: 20px;
-	height: 80px;
+/* img {
+	width: 48px;
+	height: 48px;
+	margin: 20px;
+} */
+
+.parentDiv {
 	display: flex;
-	justify-content: left;
-	align-items: center;
-	border-bottom: solid black 1px;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
 }
-.Navbar-logo {
-	top: 20px;
+
+.logoAndText {
+	display: flex;
 	margin-left: 200px;
-	left: 200px;
-	/* height: 64px;
-	width: 64px; */
-	align-items: center;
-	margin-bottom: 20px;
+	/*   float:left; */
+}
+.logo {
+	width: 48px;
+	height: 48px;
+	margin: 20px;
 }
 .instaclone {
-	top: 25px;
-	left: 274px;
-	width: 289px;
-	text-align: left;
-	margin-top: 40px;
-	font: normal normal normal 64px/71px Palatino;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 12px;
+	font: normal normal normal 48px/60px Palatino;
 	letter-spacing: 0px;
-	margin-left: 10px;
+	/* margin-left: 10px; */
 	color: #006238;
 	opacity: 1;
 }
 .camera {
-	position: absolute;
-	display: flex;
-	align-items: center;
-	text-align: right;
-	top: 26px;
-	left: 1080px;
-	width: 48px;
-	height: 48px;
-	background: transparent 0% 0% no-repeat padding-box;
-	opacity: 1;
+	width: 36px;
+	height: 36px;
+	margin: 26px;
+	padding-right: 200px;
 }

@@ -8,14 +8,21 @@ class Navbar extends Component{
     render(){
         return(
             <>
-                <nav className="NavbarItems">
-                    <img className="Navbar-logo" src={clone} alt="logo" ></img>
-                    <p className="instaclone">Instaclone</p>
-                    <img className="camera" src={camera} alt="camera" ></img>
-                </nav>
+                <div class="parentDiv">
+                    <div class="logoAndText">
+                        <img className="logo" src={clone} alt="" />
+                        <p className = "instaclone"> Instaclone </p>
+                    </div>
+                    <div class="cameraIcon">
+                        <img className="camera" src={camera} alt="" />
+                    </div>
+                
+                </div>
             </>
         )
     }
 }
 
 export default Navbar;
+
+
