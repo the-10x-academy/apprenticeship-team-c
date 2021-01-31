@@ -3,6 +3,8 @@ const express = require("express");
 const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
+const mongoose = require("mongoose");
+const url = "mongodb://localhost:27017/instaclone";
 
 const indexRouter = require("./routes/index");
 
@@ -11,6 +13,8 @@ const app = express();
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
+
+mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(logger("dev"));
 app.use(express.json());
@@ -35,5 +39,9 @@ app.use(function (err, req, res, next) {
 	res.status(err.status || 500);
 	res.render("error");
 });
+
+// app.listen(9000, () => {
+// 	console.log(`Example app listening at http://localhost:9000`)
+//   })
 
 module.exports = app;
