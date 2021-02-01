@@ -5,7 +5,7 @@ import LandingPageImg from "./img/homePage-img.png"
 function LandingPage() {
     return (< div className="landingPage" >
         <div className="leftSection">
-            <img src={LandingPageImg} className="homePage-img" />
+            <img src={LandingPageImg} alt="Landing-Page-img" className="homePage-img" />
         </div>
         <div className="rightSection">
             <div className="rightSideContent">
