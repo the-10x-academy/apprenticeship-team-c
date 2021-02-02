@@ -1,5 +1,9 @@
 body {overflow: hidden}
 
+
+a{
+  text-decoration: none;
+}
 /* deviding the landing page into two parts one for the image and one for button and text and displaying it as flex */
 /* flex container */
 .landingPage {
@@ -8,7 +12,6 @@ body {overflow: hidden}
   padding-bottom: 5vh;
   padding-left: 5%;
 }
-
 
 
 

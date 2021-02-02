@@ -1,7 +1,7 @@
 import logo from "../../logo.svg";
 import "./LandingPage.css";
 import LandingPageImg from "./img/homePage-img.png"
-
+import {Link} from "react-router-dom"
 function LandingPage() {
     return (< div className="landingPage" >
         <div className="leftSection">
@@ -10,7 +10,7 @@ function LandingPage() {
         <div className="rightSection">
             <div className="rightSideContent">
                 <h1 className="teamHeading"> 10X Team-C </h1>
-                <button className="enter-btn"> Enter </button>
+                <Link to="/post"><button className="enter-btn"> Enter </button></Link>
             </div>
         </div>
     </div>
