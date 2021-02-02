@@ -1,9 +1,19 @@
+<<<<<<< HEAD
+=======
+body {overflow: hidden}
+
+>>>>>>> 0d8dd9846b030a128ed2aea925527d38e19b94ed
 /* deviding the landing page into two parts one for the image and one for button and text and displaying it as flex */
 /* flex container */
 .landingPage {
   display: flex;
+<<<<<<< HEAD
   padding-top: 80px;
   padding-bottom: 80px;
+=======
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+>>>>>>> 0d8dd9846b030a128ed2aea925527d38e19b94ed
   padding-left: 5%;
 }
 
@@ -17,7 +27,11 @@
 }
 
 .homePage-img {
+<<<<<<< HEAD
   height: 95vh;
+=======
+  height: 90vh;
+>>>>>>> 0d8dd9846b030a128ed2aea925527d38e19b94ed
   width: 30vw;
 }
 
