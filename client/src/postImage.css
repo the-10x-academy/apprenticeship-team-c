@@ -1,0 +1,121 @@
+.post-card {
+	max-width: 500px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	padding-top: 120px;
+}
+.card {
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 40px;
+	border: 1px solid #bbb;
+}
+
+.card-header {
+	display: flex;
+	padding: 10px 20px;
+	align-items: center;
+	justify-content: space-between;
+	/* border-bottom: 1px solid; */
+}
+
+p {
+	margin: 0px !important;
+	font: normal normal normal 14px/14px Verdana;
+	color: #999;
+}
+
+.author-name {
+	font: normal normal bold 18px/18px Helvetica;
+	color: black;
+	margin-bottom: 5px !important;
+	text-transform: capitalize;
+}
+
+.author-city {
+	font-size: 14px;
+	font: normal normal normal 14px/14px Verdana;
+	color: #999;
+	text-transform: capitalize;
+}
+
+.left-part {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+}
+
+.dot {
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	margin-left: 4px;
+	background-color: black;
+}
+
+.right-part {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-body {
+	height: 200px;
+	/* border-bottom: 1px solid; */
+}
+
+.card-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	padding: 10px 20px;
+}
+
+.card-title {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font: normal normal bold 18px/18px Helvetica;
+	color: black;
+}
+
+.footer-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.footer-left-part {
+	font-size: 14px;
+	display: flex;
+}
+
+.footer-right-part {
+	font-size: 14px;
+	font: normal normal normal 14px/14px Verdana;
+	color: black;
+}
+.postimg {
+	width: 100%;
+	height: 200px;
+	background: transparent
+		url("https://i.ytimg.com/vi/5sTg4Oeh2rM/maxresdefault.jpg") 0% 0% no-repeat
+		padding-box;
+}
+.sharebut {
+	width: 32px;
+	height: 32px;
+	margin-left: 12px;
+	transform: scale(0.8);
+}
+.likebut {
+	height: 32px;
+	width: 32px;
+	background: transparent url("./heart.png") 0% 0% no-repeat padding-box;
+	opacity: 1;
+	transform: scale(0.8);
+}
