@@ -1,8 +1,7 @@
-import "./HomePage.css";
-import LandingPage from "../LandingPage/LandingPage";
+import LandingPage from "../landing_page";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import Navbar from "../navBar/header";
-import CreatePost from "../CreatePost/CreatePost";
+import Navbar from "../navigation_bar";
+import CreatePost from "../create_post";
 function HomePage() {
 	return (
 		<Router>

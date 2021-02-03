@@ -1,5 +1,5 @@
-import "./LandingPage.css";
-import LandingPageImg from "./img/homePage-img.png";
+import "./landing_page.css";
+import LandingPageImg from "./images/landing_page_image.png";
 import { Link } from "react-router-dom";
 function LandingPage() {
 	return (
@@ -8,14 +8,14 @@ function LandingPage() {
 				<img
 					src={LandingPageImg}
 					alt="Landing-Page-img"
-					className="homePage-img"
+					className="homePageImage"
 				/>
 			</div>
 			<div className="rightSection">
 				<div className="rightSideContent">
 					<h1 className="teamHeading"> 10X Team-C </h1>
 					<Link to="/post">
-						<button className="enter-btn"> Enter </button>
+						<button className="enterButton"> Enter </button>
 					</Link>
 				</div>
 			</div>

@@ -1,22 +1,22 @@
 import React from "react";
-import "./AddPost.css";
+import "./add_post.css";
 
 function AddPost() {
 	return (
-		<div className="BoxComponents">
-			<div className="part1">
+		<div className="boxComponents">
+			<div className="dataCollection">
 				<input className="inputFile" placeholder="No file chosen"></input>
-				<button className="BrowseButton">Browse</button>
+				<button className="browseButton">Browse</button>
 			</div>
-			<div className="part2">
+			<div className="infoCollection">
 				<input className="authorName" placeholder="Author"></input>
 				<input className="itemLocation" placeholder="Location"></input>
 			</div>
-			<div className="part3">
+			<div className="descriptionAdding">
 				<input className="itemCaption" placeholder="Description"></input>
 			</div>
-			<div className="part4">
-				<button className="PostButton">Post</button>
+			<div className="postElement">
+				<button className="postButton">Post</button>
 			</div>
 		</div>
 	);

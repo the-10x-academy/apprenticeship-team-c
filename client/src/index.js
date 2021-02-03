@@ -4,7 +4,7 @@ import "./index.css";
 // import App from "./Components/HomePage/HomePage";
 
 import reportWebVitals from "./reportWebVitals";
-import HomePage from "./Components/HomePage/HomePage";
+import HomePage from "./components/home_page";
 
 ReactDOM.render(
 	<React.StrictMode>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import AddPost from "./AddPost/AddPost";
-import Navbar from "../navBar/header";
+import AddPost from "./add_post";
+import Navbar from "../navigation_bar";
 
 class CreatePost extends Component {
 	render() {

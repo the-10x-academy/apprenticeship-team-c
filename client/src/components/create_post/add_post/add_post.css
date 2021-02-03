@@ -1,4 +1,4 @@
-.BoxComponents {
+.boxComponents {
 	margin-left: 5%;
 	margin-right: 5%;
 	border: solid lightgray;
@@ -10,7 +10,7 @@
 	padding: 0.8% 3% 0% 3%;
 }
 
-.part1 {
+.dataCollection {
 	display: flex;
 	padding-top: 4%;
 	padding-bottom: 2%;
@@ -18,18 +18,18 @@
 	justify-content: space-between;
 	width: 100%;
 }
-.part2 {
+.infoCollection {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
 }
-.part3 {
+.descriptionAdding {
 	display: flex;
 	padding-top: 2%;
 	text-align: left;
 	width: 100%;
 }
-.part4 {
+.postElement {
 	display: flex;
 	padding-top: 4%;
 	padding-bottom: 4%;
@@ -38,7 +38,7 @@
 	align-items: center;
 }
 
-.BrowseButton {
+.browseButton {
 	border: solid lightgray;
 	outline: none;
 	width: 20%;
@@ -90,7 +90,7 @@
 	font: normal normal normal 18px/22px Verdana;
 }
 
-.PostButton {
+.postButton {
 	border: solid lightgray;
 	outline: none;
 	width: 15%;
