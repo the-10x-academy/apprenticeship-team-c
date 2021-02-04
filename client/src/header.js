@@ -8,12 +8,14 @@ class Navbar extends Component {
 		return (
 			<>
 				<div class="parentDiv">
-					<div class="logoAndText">
-						<img className="logo" src={clone} alt="" />
-						<p className="instaclone"> Instaclone </p>
-					</div>
-					<div class="cameraIcon">
-						<img className="camera" src={camera} alt="" />
+					<div class="header-content">
+						<div class="logoAndText">
+							<img className="logo" src={clone} alt="" />
+							<p className="instaclone"> Instaclone </p>
+						</div>
+						<div class="cameraIcon">
+							<img className="camera" src={camera} alt="" />
+						</div>
 					</div>
 				</div>
 			</>

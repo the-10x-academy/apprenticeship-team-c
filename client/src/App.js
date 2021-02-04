@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import PostImage from "./postImage";
+import PostImage from "./post_image";
 
 export default function App() {
 	return (
