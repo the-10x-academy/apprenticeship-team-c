@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./header.css";
-import clone from "./icon.png";
-import camera from "./camera.png";
+import clone from "./images/icon.png";
+import camera from "./images/camera.png";
 
 class Navbar extends Component {
 	render() {

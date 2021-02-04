@@ -1,14 +1,14 @@
 import React from "react";
-import "./postImage.css";
-import Details from "./details";
-import Header from "./header";
+import "../post_component.css";
+import PostCard from "../post_card/post_card";
+import Header from "../../navigation_bar/header";
 
-function PostImage() {
+function PostList() {
 	return (
 		<div>
 			<Header />
 			<div className="post-card">
-				<Details
+				<PostCard
 					Name="siva"
 					place="Bengaluru"
 					image="https://i.ytimg.com/vi/5sTg4Oeh2rM/maxresdefault.jpg"
@@ -17,7 +17,7 @@ function PostImage() {
 					heading="Kick start your career"
 				/>
 
-				<Details
+				<PostCard
 					Name="Sameer"
 					place="San Francisco"
 					image="https://i.ytimg.com/vi/5sTg4Oeh2rM/maxresdefault.jpg"
@@ -25,7 +25,7 @@ function PostImage() {
 					likes="999"
 					heading="Beautiful Big Sur"
 				/>
-				<Details
+				<PostCard
 					Name="Prabal"
 					place="Las vegas"
 					image="https://i.ytimg.com/vi/5sTg4Oeh2rM/maxresdefault.jpg"
@@ -38,4 +38,4 @@ function PostImage() {
 	);
 }
 
-export default PostImage;
+export default PostList;

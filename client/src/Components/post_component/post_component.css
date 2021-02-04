@@ -115,7 +115,7 @@ p {
 .likebut {
 	height: 32px;
 	width: 32px;
-	background: transparent url("./heart.png") 0% 0% no-repeat padding-box;
+	background: transparent url("./post_list/images/heart.png") 0% 0% no-repeat padding-box;
 	opacity: 1;
 	transform: scale(0.8);
 }

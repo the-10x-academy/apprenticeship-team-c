@@ -1,7 +1,7 @@
-import "./postImage.css";
-import heart from "./heart.png";
-import share from "./share.png";
-function Details(props) {
+import "../post_component.css";
+import heart from "./images/heart.png";
+import share from "./images/share.png";
+function PostCard(props) {
 	return (
 		<div className="card">
 			<div className="card-header">
@@ -32,4 +32,4 @@ function Details(props) {
 		</div>
 	);
 }
-export default Details;
+export default PostCard;
