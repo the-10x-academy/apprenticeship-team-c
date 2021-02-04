@@ -1,34 +1,12 @@
-import "../post_component.css";
-import heart from "./images/heart.png";
-import share from "./images/share.png";
+
+
+import PostDetails from "../post_details/post_details"
+import PostHeader from "../post_header/Post_header"
 function PostCard(props) {
 	return (
 		<div className="card">
-			<div className="card-header">
-				<div className="left-part">
-					<p className="author-name">{props.Name}</p>
-					<p className="author-city">{props.place}</p>
-				</div>
-				<div className="right-part">
-					<div className="dot" />
-					<div className="dot" />
-					<div className="dot" />
-				</div>
-			</div>
-			<div className="card-body">
-				<img className="postimg" src={props.image} alt="loading" />
-			</div>
-			<div className="card-footer">
-				<div className="footer-row">
-					<div className="footer-left-part">
-						<img className="likebut" src={heart} alt="like" />
-						<img className="sharebut" src={share} alt="share" />
-					</div>
-					<div className="footer-right-part"> {props.date} </div>
-				</div>
-				<p> {props.likes} likes </p>
-				<p className="card-title"> {props.heading} </p>
-			</div>
+			<PostHeader Name={props.Name} place={props.place} image={props.image} />
+			<PostDetails dates={props.dates} likes={props.likes} headings={props.headings} />
 		</div>
 	);
 }
