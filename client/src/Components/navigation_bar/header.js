@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./header.css";
 import clone from "./images/icon.png";
 import camera from "./images/camera.png";
+import {Link} from "react-router-dom"
 
 class Navbar extends Component {
 	render() {
@@ -13,9 +14,11 @@ class Navbar extends Component {
 							<img className="logo" src={clone} alt="" />
 							<p className="instaclone"> Instaclone </p>
 						</div>
+			<Link to="/post/create">
 						<div class="cameraIcon">
 							<img className="camera" src={camera} alt="" />
 						</div>
+						</Link>
 					</div>
 				</div>
 			</>
