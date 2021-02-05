@@ -1,3 +1,16 @@
+body{
+	overflow: hidden;
+}
+.outerDiv{
+display: inline;
+position:  absolute;
+width: 100%;
+overflow: hidden;
+}
+.postList{
+	overflow: hidden;
+
+}
 .post-card {
 	max-width: 500px;
 	margin: auto;

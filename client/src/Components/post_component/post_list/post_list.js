@@ -4,9 +4,9 @@ import PostCard from "../post_card/post_card";
 import Header from "../../navigation_bar/header";
 
 function PostList() {
-	return (
-		<div>
+	return ( <div className="outerDiv">
 			<Header />
+		<div className="postList">
 			<div className="post-card">
 				<PostCard
 					Name="siva"
@@ -17,7 +17,7 @@ function PostList() {
 					heading="Kick start your career"
 				/>
 
-				<PostCard
+				{/* <PostCard
 					Name="Sameer"
 					place="San Francisco"
 					image="https://i.ytimg.com/vi/5sTg4Oeh2rM/maxresdefault.jpg"
@@ -32,8 +32,9 @@ function PostList() {
 					date="31 dec 2020"
 					likes="999999"
 					heading="Lets Play Big"
-				/>
+				/> */}
 			</div>
+		</div>
 		</div>
 	);
 }

@@ -1,6 +1,4 @@
-body {
-	overflow: hidden;
-}
+
 
 a {
 	text-decoration: none;
@@ -10,8 +8,9 @@ a {
 .landingPage {
 	display: flex;
 	padding-top: 5vh;
-	padding-bottom: 5vh;
+	/* padding-bottom: 5vh; */
 	padding-left: 5%;
+	
 }
 
 /*-------------------- left section (image section)------------------------ */
