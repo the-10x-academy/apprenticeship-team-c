@@ -7,12 +7,13 @@ import {Link} from "react-router-dom"
 class Navbar extends Component {
 	render() {
 		return (
-			<>
+			
 				<div class="parentDiv">
 					<div class="header-content">
 						<div class="logoAndText">
 							<img className="logo" src={clone} alt="" />
-							<p className="instaclone"> Instaclone </p>
+							<Link to="/post"><p className="instaclone"> Instaclone </p>
+							</Link>
 						</div>
 			<Link to="/post/create">
 						<div class="cameraIcon">
@@ -21,7 +22,7 @@ class Navbar extends Component {
 						</Link>
 					</div>
 				</div>
-			</>
+		
 		);
 	}
 }
