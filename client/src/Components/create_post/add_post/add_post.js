@@ -9,7 +9,7 @@ function AddPost() {
 		<div className="boxComponents">
 			<div className="dataCollection">
 				<input className="inputFile"  placeholder="No file chosen"></input>
-				<button className="browseButton" >Browse</button>
+				<input type="file" className="browseButton" name="upload-image" accept="image/png, image/jpeg" />
 			</div>
 			<div className="infoCollection">
 				<input className="authorName" placeholder="Author"></input>

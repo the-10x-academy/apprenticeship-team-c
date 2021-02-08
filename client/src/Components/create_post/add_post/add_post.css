@@ -1,7 +1,7 @@
 .boxComponents {
 	margin-left: 5%;
 	margin-right: 5%;
-	border: 1px solid lightgray ;
+	border: 1px solid lightgray;
 	display: flex;
 	margin-top: 2%;
 	margin-left: 30%;
@@ -10,7 +10,6 @@
 	padding: 0.8% 3% 0% 3%;
 	position: relative;
 	top: 100px;
-
 }
 
 .dataCollection {
@@ -42,17 +41,17 @@
 }
 
 .browseButton {
-	border: 1px solid lightgray ;
+	border: 1px solid lightgray;
 	outline: none;
 	width: 20%;
 	border-radius: 5px;
 	padding-top: 1%;
 	padding-bottom: 1%;
-	font: normal normal normal 18px/22px Verdana;
+	font: normal normal normal 12px/20px Verdana;
 }
 
 .inputFile {
-	border: 1px solid lightgray ;
+	border: 1px solid lightgray;
 	outline: none;
 	width: 80%;
 	border-radius: 5px;
@@ -62,7 +61,7 @@
 }
 
 .authorName {
-	border: 1px solid lightgray ;
+	border: 1px solid lightgray;
 	outline: none;
 	width: 35%;
 	text-align: left;
@@ -73,7 +72,7 @@
 }
 
 .itemLocation {
-	border: 1px solid lightgray ;
+	border: 1px solid lightgray;
 	outline: none;
 	width: 35%;
 	text-align: left;
@@ -84,7 +83,7 @@
 }
 
 .itemCaption {
-	border: 1px solid lightgray ;
+	border: 1px solid lightgray;
 	outline: none;
 	width: 99%;
 	border-radius: 5px;
@@ -94,7 +93,7 @@
 }
 
 .postButton {
-	border: 1px solid lightgray ;
+	border: 1px solid lightgray;
 	outline: none;
 	width: 15%;
 	border-radius: 5px;
