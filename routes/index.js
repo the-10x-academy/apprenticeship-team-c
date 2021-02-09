@@ -1,15 +1,17 @@
 const express = require("express");
 const router = express.Router();
 const Post = require("../models/post");
-const uploadModel = require("./uploads");
-const cors = require("cors")
-app.use(express.static("public"))
+var cors = require('cors')
+var app = express();
+
+// app.use(express.static("public"))
 
 app.use(cors())
 
-router.post("/upload", function (req, res, next) {
-    console.log("heyy")
+router.post("/upload", function(req,res,next) {
+    res.send("hey")
 })
+
 
 /* get post */
 function getPost(res) {
@@ -27,6 +29,7 @@ router.get("/", function (req, res, next) {
     res.render("index", { title: "Express" });
 });
 router.get("/posts", function (req, res, next) {
+    // console.log("hitted post api")
     getPost(res)
 
 })
