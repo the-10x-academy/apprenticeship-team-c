@@ -9,11 +9,31 @@ var upload = multer({ dest: './public/images' })
 
 app.use(cors())
 
-router.post("/upload",  upload.single('file'),function(req,res,next) {
-    console.log("author :",req.body.author)
-    console.log("location ",req.body.location)
-    console.log("file:" ,req.file)
+// router.post("/upload",  upload.single('file'),function(req,res,next) {
+//     console.log("author :",req.body.author)
+//     console.log("location ",req.body.location)
+//     console.log("file:" ,req.file)
     
+    
+// })
+
+router.post("/upload",  upload.single('file'),function(req,res,next) {
+    var data = {
+        author : req.body.author,
+        location : req.body.location,
+        file: req.body.file
+    }
+    console.log(data, req.body);
+    const Profile = new Post({
+        userName : Profile.auther,
+        location : Profile.location,
+        file : Profile.file
+    });
+    Profile.save((err, docs)=>{
+        if (err) console.log(err);
+        console.log(docs);
+    });
+    res.redirect("/upload")   
     
 })
 
