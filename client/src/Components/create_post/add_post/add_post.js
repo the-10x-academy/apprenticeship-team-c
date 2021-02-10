@@ -45,7 +45,6 @@ function AddPost() {
 
 	return (
 		<>
-		<Navbar />
 		
 		<div className="boxComponents">
 			<div className="dataCollection">

@@ -12,6 +12,7 @@ app.use(cors())
 router.post("/upload",  upload.single('file'),function(req,res,next) {
     console.log("author :",req.body.author)
     console.log("location ",req.body.location)
+    console.log("caption ",req.body.caption)
     console.log("file:" ,req.file)
     
     
