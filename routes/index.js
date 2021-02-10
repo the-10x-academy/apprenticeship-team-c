@@ -21,13 +21,15 @@ router.post("/upload",  upload.single('file'),function(req,res,next) {
     var data = {
         author : req.body.author,
         location : req.body.location,
-        file: req.body.file
+        filePath: req.file.path,
+        caption: req.body.caption
     }
     console.log(data, req.body);
     const Profile = new Post({
-        userName : Profile.auther,
-        location : Profile.location,
-        file : Profile.file
+        author : data.author,
+        location : data.location,
+        filePath : data.filePath,
+        caption :  data.caption
     });
     Profile.save((err, docs)=>{
         if (err) console.log(err);
