@@ -9,7 +9,7 @@ function PostList() {
 		<div className="postList">
 			<div className="post-card">
 				<PostCard
-					Name="siva"
+					name="siva"
 					place="Bengaluru"
 					image="https://i.ytimg.com/vi/5sTg4Oeh2rM/maxresdefault.jpg"
 					date="10 Jan 2021"
@@ -18,7 +18,7 @@ function PostList() {
 				/>
 
 				<PostCard
-					Name="Sameer"
+					name="Sameer"
 					place="San Francisco"
 					image="https://i.ytimg.com/vi/5sTg4Oeh2rM/maxresdefault.jpg"
 					date="06 Jan 2021"
@@ -26,7 +26,7 @@ function PostList() {
 					heading="Beautiful Big Sur"
 				/>
 				<PostCard
-					Name="Prabal"
+					name="Prabal"
 					place="Las vegas"
 					image="https://i.ytimg.com/vi/5sTg4Oeh2rM/maxresdefault.jpg"
 					date="31 dec 2020"

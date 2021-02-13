@@ -2,7 +2,7 @@ function PostHeader(props) {
     return (<div>
         <div className="card-header">
             <div className="left-part">
-                <p className="author-name">{props.Name}</p>
+                <p className="author-name">{props.name}</p>
                 <p className="author-city">{props.place}</p>
             </div>
             <div className="right-part">

@@ -11,22 +11,18 @@ function AddPost() {
 	
 	const locationChangeHandler=(e)=>{
 		setLocation(e.target.value)
-		console.log("location: ",location)
 	}
 	
 	const authorChangeHandler=(e)=>{
 		setAuthor(e.target.value)
-		console.log("author: ", author)
 	}
 	const captionChangeHandler=(e)=>{
 		setCaption(e.target.value)
-		console.log("Caption: ", caption)
 	}
 
 	const fileChangeHandler=(e)=>{
 		const file = e.target.files[0]
 		setFile(file)
-		console.log("file: ",file )
 	}
 
 	const send=(e)=>{

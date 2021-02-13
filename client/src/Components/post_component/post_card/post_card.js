@@ -5,7 +5,7 @@ import PostHeader from "../post_header/Post_header"
 function PostCard(props) {
 	return (
 		<div className="card">
-			<PostHeader Name={props.Name} place={props.place} image={props.image} />
+			<PostHeader name={props.name} place={props.place} image={props.image} />
 			<PostDetails dates={props.dates} likes={props.likes} headings={props.headings} />
 		</div>
 	);
