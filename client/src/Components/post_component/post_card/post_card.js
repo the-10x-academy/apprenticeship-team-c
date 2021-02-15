@@ -6,7 +6,7 @@ function PostCard(props) {
 	return (
 		<div className="card">
 			<PostHeader name={props.name} place={props.place} image={props.image} />
-			<PostDetails dates={props.dates} likes={props.likes} headings={props.headings} />
+			<PostDetails date={props.date} likes={props.likes} heading={props.heading} />
 		</div>
 	);
 }
