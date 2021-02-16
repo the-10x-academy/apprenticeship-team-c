@@ -12,7 +12,7 @@ function PostHeader(props) {
             </div>
         </div>
         <div className="card-body">
-            <img className="postimg" src={props.image} alt="loading" />
+            <img className="postimg" src={"http://localhost:9000/" + props.image} alt="loading" />
         </div>
     </div>)
 }

@@ -17,20 +17,21 @@ function PostList() {
     return (
         <div className="outerDiv">
             <Header />
-            {PostDetails1.reverse().map((item) => (
+            <div className="postList">
+            
+                <div className="post-card">
+                {PostDetails1.reverse().map((item) => (
                 <PostCard
                     name={item.author}
                     key={item.id}
                     place={item.location}
                     heading={item.caption}
-                    image={item.image}
+                    image={item.filePath}
                     likes={item.reaction}
                     date={item.timestamp}
                 />
             ))}
-            <div className="postList">
-                <div className="post-card">
-                    <PostCard
+                    {/* <PostCard
                         name="siva"
                         place="Bengaluru"
                         image="https://i.ytimg.com/vi/5sTg4Oeh2rM/maxresdefault.jpg"
@@ -53,7 +54,7 @@ function PostList() {
                         date="31 dec 2020"
                         likes="999999"
                         heading="Lets Play Big"
-                    />
+                    /> */}
                 </div>
             </div>
         </div>
