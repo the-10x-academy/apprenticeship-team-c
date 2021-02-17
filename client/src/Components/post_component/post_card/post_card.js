@@ -1,5 +1,3 @@
-
-
 import PostDetails from "../post_details/post_details"
 import PostHeader from "../post_header/Post_header"
 function PostCard(props) {
