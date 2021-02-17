@@ -5,6 +5,7 @@ import Axios from "axios";
 import {Link} from "react-router-dom";
 
 function AddPost() {
+
 	const [file, setFile] = useState("");
 	const [author, setAuthor] = useState("");
 	const [caption, setCaption] = useState("");
@@ -15,23 +16,19 @@ function AddPost() {
 
 	const locationChangeHandler = (e) => {
 		setLocation(e.target.value);
-		console.log("location: ", location);
 	};
 
 	const authorChangeHandler = (e) => {
 		setAuthor(e.target.value);
-		console.log("author: ", author);
 	};
 	const captionChangeHandler = (e) => {
 		setCaption(e.target.value);
-		console.log("Caption: ", caption);
 	};
 
 	const hiddenFileInput = React.useRef(null);
 	const fileChangeHandler = (e) => {
 		const file = e.target.files[0];
 		setFile(file);
-		console.log("file: ", file);
 	};
 
 	const send = (e) => {
