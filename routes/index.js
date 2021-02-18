@@ -2,16 +2,9 @@ const express = require("express");
 const router = express.Router();
 const Post = require("../models/post");
 const multer = require("multer");
-const fs = require("fs");
-const path = require("path");
-
-// var upload = multer({ dest: './public/images' })
-
-
 
 var storage = multer.diskStorage({
 	destination: function (req, file, cb) {
-		// Uploads is the Upload_folder_name
 		cb(null, "public/images");
 	},
 	filename: function (req, file, cb) {
@@ -28,20 +21,25 @@ router.post("/upload", upload.single('file'), function (req, res, next) {
         author: req.body.author,
         location: req.body.location,
         filePath: req.file.path.replace("public",""),
-        caption: req.body.caption
+        caption: req.body.caption,
+        reaction: req.body.reaction
     }
-    console.log(data, req.body);
+    console.log("data: ",data)
+
     const Profile = new Post({
         author: data.author,
         location: data.location,
         filePath: data.filePath,
-        caption: data.caption
+        caption: data.caption,
+        reaction:data.reaction
     });
+    console.log("profile: ",Profile)
     Profile.save((err, docs) => {
         if (err) console.log(err);
         console.log(docs);
     });
-    res.redirect("/upload")
+    res.sendStatus(201)
+    
 
 })
 

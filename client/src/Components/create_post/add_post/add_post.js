@@ -3,14 +3,16 @@ import Navbar from "../../navigation_bar/header";
 import "./add_post.css";
 import Axios from "axios";
 import {Link} from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
-function AddPost() {
+
+function AddPost(props) {
 
 	const [file, setFile] = useState("");
 	const [author, setAuthor] = useState("");
 	const [caption, setCaption] = useState("");
 	const [location, setLocation] = useState("");
-
+	let history = useHistory();
 	var enableButton =
 		(location.length === 0) || (file.length === 0) || (caption.length === 0) || (author.length === 0);
 
@@ -37,9 +39,12 @@ function AddPost() {
 		data.append("caption", caption);
 		data.append("location", location);
 		data.append("file", file);
+		data.append("reaction", 0)
 
 		Axios.post("http://localhost:9000/upload", data)
-			.then((res) => console.log(res))
+			.then((res) => {
+				history.push("/post");
+			})
 			.catch((err) => console.log(err));
 	};
 	console.log("test", enableButton);
@@ -86,11 +91,11 @@ function AddPost() {
 					></input>
 				</div>
 				<div className="postElement">
-				<Link to="/post/">
+				
 					<button className="postButton" disabled={enableButton} onClick={send}>
 						Post
 					</button>
-					</Link>
+					
 				</div>
 			</div>
 		</>
