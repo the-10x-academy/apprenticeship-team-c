@@ -4,42 +4,58 @@ const Post = require("../models/post");
 const multer = require("multer");
 
 var storage = multer.diskStorage({
-	destination: function (req, file, cb) {
-		cb(null, "public/images");
-	},
-	filename: function (req, file, cb) {
-		cb(null, file.fieldname + "-" + Date.now() + ".jpg");
-	},
+    destination: function (req, file, cb) {
+        cb(null, "public/images");
+    },
+    filename: function (req, file, cb) {
+        cb(null, file.fieldname + "-" + Date.now() + ".jpg");
+    },
 });
 
 
+//------------- updating likes count(handling patch req)---------------------
 
+router.patch('/likes/:id', async (req, res) => {
+    try {
+        const id = req.params.id
+        const updates = req.body
+        const result = await Post.findByIdAndUpdate(id,updates)
+        res.send(result)
+    }
+    catch (err) {
+        console.log(err.message)
+    }
+})
+
+
+
+// ----------------saving post(handling post request)-------------------------
 var upload = multer({ storage: storage });
 
 router.post("/upload", upload.single('file'), function (req, res, next) {
     var data = {
         author: req.body.author,
         location: req.body.location,
-        filePath: req.file.path.replace("public",""),
+        filePath: req.file.path.replace("public", ""),
         caption: req.body.caption,
         reaction: req.body.reaction
     }
-    console.log("data: ",data)
+    console.log("data: ", data)
 
     const Profile = new Post({
         author: data.author,
         location: data.location,
         filePath: data.filePath,
         caption: data.caption,
-        reaction:data.reaction
+        reaction: data.reaction
     });
-    console.log("profile: ",Profile)
+    console.log("profile: ", Profile)
     Profile.save((err, docs) => {
         if (err) console.log(err);
         console.log(docs);
     });
     res.sendStatus(201)
-    
+
 
 })
 

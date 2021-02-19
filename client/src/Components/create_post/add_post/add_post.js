@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Navbar from "../../navigation_bar/header";
 import "./add_post.css";
 import Axios from "axios";
-import {Link} from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 

@@ -117,6 +117,7 @@ p {
 	height: 32px;
 	margin-left: 12px;
 	transform: scale(0.8);
+	z-index: -1;
 }
 .likebut {
 	height: 32px;
@@ -125,4 +126,5 @@ p {
 		padding-box;
 	opacity: 1;
 	transform: scale(0.8);
+	/* z-index: -1; */
 }

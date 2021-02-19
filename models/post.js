@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 try {
-    var db = mongoose.connect('mongodb://localhost:27017/instaclone', { useNewUrlParser: true, useUnifiedTopology: true });
+ var db = mongoose.connect('mongodb://localhost:27017/instaclone', { useNewUrlParser: true, useUnifiedTopology: true });
     console.log('success connection');
 }
 catch (error) {
@@ -16,3 +16,6 @@ const post_schema = mongoose.Schema({
 });
 post_schema.set("collection", "post");
 module.exports = mongoose.model("Post", post_schema); // creates collection posts
+
+
+

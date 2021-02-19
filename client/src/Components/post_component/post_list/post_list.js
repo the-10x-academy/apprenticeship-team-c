@@ -9,6 +9,8 @@ function PostList() {
         res.json().then((res) => getPostDetails(res));
         console.log("here", res)
     }
+
+    
     useEffect(() => {
         callAPI();
         console.log("called");
@@ -22,12 +24,13 @@ function PostList() {
                 {PostDetails1.reverse().map((item) => (
                 <PostCard
                     name={item.author}
-                    key={item.id}
+                    id={item._id}
                     place={item.location}
                     heading={item.caption}
                     image={item.filePath}
                     likes={item.reaction}
                     date={item.timestamp}
+                    key={Math.random()}
                 />))}
                 </div>
             </div>
