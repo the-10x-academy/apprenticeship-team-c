@@ -6,7 +6,7 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const url = "mongodb://localhost:27017/instaclone";
 
-var cors = require('cors')
+var cors = require("cors");
 
 const indexRouter = require("./routes/index");
 
@@ -15,8 +15,6 @@ const app = express();
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
-
-mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 
 app.use(cors());
 
